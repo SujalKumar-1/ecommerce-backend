@@ -1,9 +1,8 @@
 package com.sujal.shopingwebsitebackend1.Service;
 
 import com.sujal.shopingwebsitebackend1.Model.Product;
-import com.sujal.shopingwebsitebackend1.productsRepo.productsRepo;
+import com.sujal.shopingwebsitebackend1.Repo.productsRepo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;

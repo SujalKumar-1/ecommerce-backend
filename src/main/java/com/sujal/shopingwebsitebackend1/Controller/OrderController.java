@@ -16,10 +16,11 @@ import java.util.List;
 public class OrderController {
     @Autowired
     private Orderservice orderservice;
+
     @PostMapping("/orders/place")
-    public ResponseEntity<OrderResponse> placeorder(@RequestBody OrderRequest orderRequest){
-        OrderResponse orderResponse = orderservice.placeOrder(orderRequest);
-        return new ResponseEntity<>(orderResponse, HttpStatus.OK);
+    public ResponseEntity<Void> placeorder(@RequestBody OrderRequest orderRequest){
+        orderservice.placeOrder(orderRequest);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
     @GetMapping("/orders")
     public ResponseEntity<List<OrderResponse>> getAllOrder(){

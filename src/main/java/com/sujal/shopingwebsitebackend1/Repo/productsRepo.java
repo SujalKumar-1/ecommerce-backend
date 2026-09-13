@@ -1,4 +1,4 @@
-package com.sujal.shopingwebsitebackend1.productsRepo;
+package com.sujal.shopingwebsitebackend1.Repo;
 
 import com.sujal.shopingwebsitebackend1.Model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
